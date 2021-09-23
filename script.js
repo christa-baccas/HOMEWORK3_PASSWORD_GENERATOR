@@ -19,6 +19,18 @@ var charUpper = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P'
 var number = [0,1,2,3,4,5,6,7,8,9];
 var sym = ['!', '@', '#', '%', '$'];
 
+
+var generatePassword = function(){
+  // Ask user for length choice and if user click cancel
+  var length = window.prompt("Enter a password length 8 - 128")
+  if(!length){
+    return;
+  }
+  
+
+};
+
+
 // if user click the generate button a prompt will appear (window.prompt)
 // if user enters a number 8 - 128 a confirm window will appear
    // - password should generate the length entered
