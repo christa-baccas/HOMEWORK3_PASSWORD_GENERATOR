@@ -53,7 +53,20 @@ var generatePassword = function(){
         pwd = "Abracadabra!".split("");
         console.log(pwd);
       }
-  
+
+          // stores the generated password
+    var finalPwd = [];
+
+    // 
+    for(var i = 0; i < length; i++){
+        var generated = Math.floor(Math.random()* pwd.length);
+        finalPwd.push(pwd[generated]);
+    }
+
+    // added an alert to validate password has been generated
+    window.alert("See your password below");
+    return finalPwd.join('');
+    
 };
 
 
