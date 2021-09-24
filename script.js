@@ -27,7 +27,11 @@ var generatePassword = function(){
     return;
   }
   
-
+  // User must enter a number 8-128
+  if(length < 8 || length  > 128){
+    window.alert("You must enter a length 8 - 128");
+    return;
+  } 
 };
 
 
