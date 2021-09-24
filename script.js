@@ -32,6 +32,28 @@ var generatePassword = function(){
     window.alert("You must enter a length 8 - 128");
     return;
   } 
+
+      // prompts after user enters a valid pwd length. User can pick how their password can be generated
+      var spec = window.confirm("Would you like to include special characters?");
+      if(spec){
+        pwd = pwd.concat(sym);
+      }
+      var num = window.confirm("Would you like to include numbers?");
+      if(num){
+        pwd = pwd.concat(number);
+      }
+      var lower = window.confirm("Would you like to include a lower-case characters?");
+      if(lower){
+        pwd = pwd.concat(charLower);
+      }
+      var upper = window.confirm("Would you like to include a upper-case characters?");
+      if(upper){
+        pwd = pwd.concat(charUpper);
+      } else if(!spec && !num && !lower && !upper){
+        pwd = "Abracadabra!".split("");
+        console.log(pwd);
+      }
+  
 };
 
 
