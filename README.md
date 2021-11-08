@@ -1,4 +1,4 @@
-# HOMEWORK3_PASSWORD_GENERATOR
+# PASSWORD_GENERATOR
 
 # DESCRIPTION
 - The purpose of this homework was to allow the red generate button to generate a random password.
